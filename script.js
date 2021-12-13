@@ -1,1 +1,1 @@
-console.log("JS is fueled and ready to blast off!")
+console.log("JS is fueled and ready to blast off!!")
