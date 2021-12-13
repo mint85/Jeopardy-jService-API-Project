@@ -1,6 +1,6 @@
 // variables
 const URL = "https://jservice.io/api/random";
-
+const ajaxResult = [];
 
 // element references
 const $category = $('#category')
@@ -18,9 +18,11 @@ function getJeopardyData(evt) {
     evt.preventDefault();
 
     $.ajax(URL).then(function (data) {
+        ajaxResult.push(data);
         displayNewClue(data);
         // displayAnswer(data);
         console.log(data);
+        console.log(ajaxResult);
         // console.log(data[0].category.title);
         // console.log(data[0].question);
         // console.log(data[0].answer);
@@ -36,14 +38,14 @@ function displayNewClue(clueData) {
     $('#clue').html(`Clue: ${clueData[0].question}`);
 }
 
-// this does not display the answer. I don't think it can access
-// the d
-function displayAnswer(clueData) {
-    $('#answer').html(`Answer: ${clueData[0].answer}`);
+// trying to access the answer from the ajaxResult array I created
+function displayAnswer() {
+    $('#answer').html(`Answer: ${ajaxResult[0,0][0].answer}`);
 }
 
 function resetFields() {
     $('#category').html(`Category:`);
     $('#clue').html(`Clue:`);
     $('#answer').html(`Answer:`);
+    ajaxResult.length = 0;
 }
