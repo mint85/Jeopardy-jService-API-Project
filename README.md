@@ -1,6 +1,6 @@
-# Random Jeopardy clues using jService API
+# Random Jeopardy Clues
 
-This is an app that displays a randomly selected Jeopardy clue from a database that contains over 156,000 clues that have been used on the show.
+This is an app that displays a randomly selected Jeopardy clue from the jService API that contains over 156,000 clues that have been used on the show throughout the years.
 
 ## Technologies Used:
 <ul>
