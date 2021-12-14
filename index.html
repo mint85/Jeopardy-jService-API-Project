@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+    <script defer src="./script.js"></script>
     <title>Random Jeopardy Clues</title>
 </head>
 
 <body>
-    <h1 id="titleText">Insert cool project title here</h1>
-    <h2>Insert Jeopardy logo here</h2>
-    <!-- <img src="./images/jeopardylogo.jpeg" alt="Jeopardy Logo"> -->
-    <p>Insert text about site here</p>
+    <h1 id="titleText">Random Jeopardy Clues</h1>
+    <img src="./images/jeopardylogo.jpeg" alt="Jeopardy Logo">
+    <p>This is an app that displays a randomly selected Jeopardy
+        clue from the jService API that contains over 156,000 clues
+        that have been used on the show throughout the years.</p>
+    <h4>Instructions:</h4>
+        <ul>
+            <li>To begin, click on the 'Get Clue' button</li>
+            <li>A random Jeopardy clue with clue category will be displayed</li>
+            <li>Click the 'Get Answer' button to reveal the answer to the clue</li>
+            <li>Click the 'Reset' button to clear the fields on the page before
+                getting another clue</li>
+        </ul>
     <div>
         <button type="submit" id="getClue">Get Clue</button>
         <button type="submit" id="getAnswer">Get Answer</button>
@@ -31,7 +40,6 @@
     <div>
         <h3 id="answer">Answer:</h3>
     </div>
-    <script defer src="./script.js"></script>
 </body>
 
 </html>
