@@ -7,11 +7,13 @@ const $category = $("#category");
 const $getClue = $("#getClue");
 const $getAnswer = $("#getAnswer");
 const $reset = $("#reset");
+const $titleText = $("#titleText");
 
 // event listeners
 $getClue.on("click", getJeopardyData);
 $getAnswer.on("click", displayAnswer);
 $reset.on("click", resetFields);
+
 
 // functions
 function getJeopardyData(evt) {
@@ -51,3 +53,10 @@ function resetFields() {
     // another set of data
     ajaxResult.length = 0;
 }
+
+// possible event listener to fade in parts of the page on initial page load?
+// window.addEventListener('DOMcontentLoaded', function() {
+//     window.onload = function() {
+//         $titleText.fadeIn(3000);
+// }
+//  } );
