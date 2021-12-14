@@ -2,7 +2,10 @@ body {
   background-color: rgba(8, 20, 132);
   color: whitesmoke;
 }
-
+#jLogo {
+    width: 100%;
+    height: auto;
+}
 /* #titleText {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
