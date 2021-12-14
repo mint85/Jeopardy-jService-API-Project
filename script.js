@@ -16,12 +16,10 @@ $reset.on("click", resetFields);
 // functions
 function getJeopardyData(evt) {
     evt.preventDefault();
-
-    $.ajax(URL).then(
-        function (data) {
+    $.ajax(URL).then(function (data) {
+            // put all received data in ajaxResult array for later use
             ajaxResult.push(data);
             displayNewClue(data);
-            // displayAnswer(data);
             console.log(data);
             console.log(ajaxResult);
             // console.log(data[0].category.title);
@@ -40,7 +38,7 @@ function displayNewClue(clueData) {
     $("#clue").html(`Clue: ${clueData[0].question}`);
 }
 
-// trying to access the answer from the ajaxResult array I created
+    // Access the answer from the ajaxResult array I created
 function displayAnswer() {
     $("#answer").html(`Answer: ${ajaxResult[(0, 0)][0].answer}`);
 }
@@ -49,5 +47,7 @@ function resetFields() {
     $("#category").html(`Category:`);
     $("#clue").html(`Clue:`);
     $("#answer").html(`Answer:`);
+    // resets ajaxResult array to empty, ready to recieve
+    // another set of data
     ajaxResult.length = 0;
 }
