@@ -18,6 +18,11 @@ body {
         "clue"
         "btmNav" */
 }
+h4 {
+    text-align: center;
+    font-size: 25px;
+
+}
 #topNav {
     grid-area: 1/1/1/7;
     display: flex;
@@ -41,11 +46,15 @@ body {
 }
 #instructions {
     grid-area: 5/3/5/5;
-    background-color: salmon;
+    border: 10px solid whitesmoke;
+    border-radius: 20px;
 }
 #buttons {
     grid-area: 6/3/6/5;
     background-color: slategray;
+}
+#getClue, #getAnswer, #reset {
+    padding: 15px 32px;
 }
 #clueArea {
     grid-area: 7/3/7/5;
