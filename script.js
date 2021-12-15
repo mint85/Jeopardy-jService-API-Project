@@ -36,13 +36,13 @@ function getJeopardyData(evt) {
 }
 
 function displayNewClue(clueData) {
-    $("#category").html(`Category: ${clueData[0].category.title}`);
-    $("#clue").html(`Clue: ${clueData[0].question}`);
+    $("#category").html(`<strong>Category:</strong> ${clueData[0].category.title}`);
+    $("#clue").html(`<strong>Clue:</strong> ${clueData[0].question}`);
 }
 
     // Access the answer from the ajaxResult array I created
 function displayAnswer() {
-    $("#answer").html(`Answer: ${ajaxResult[(0, 0)][0].answer}`);
+    $("#answer").html(`<strong>Answer:</strong> ${ajaxResult[(0, 0)][0].answer}`);
 }
 
 function resetFields() {

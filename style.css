@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: 'PT Serif', serif;
+    
 }
 body {
     background-color: rgba(8, 20, 132);
     color: whitesmoke;
+    font-family: 'PT Serif', serif;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -51,11 +52,11 @@ h4 {
 #instructions {
     grid-area: 5/3/5/5;
     border: 10px solid whitesmoke;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 #buttons {
     grid-area: 6/3/6/5;
-    
+    padding: 10px;
     background-color: slategray;
 }
 
@@ -69,6 +70,12 @@ h4 {
 #clueArea {
     grid-area: 7/3/7/5;
     background-color: red;
+}
+.clueArea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    border: 10px solid whitesmoke;
+    border-radius: 30px;
 }
 #btmnav {
     grid-area: 8/1/8/7;
