@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+    </style>
     <title>Random Jeopardy Clues</title>
 </head>
 
@@ -18,6 +21,7 @@
             <a href="" target="_blank">History</a>
             <a href="" target="_blank">Records</a>
             <a href="" target="_blank">Alex Trebek</a>
+            <a href="" target="_blank">jService API</a>
         </nav>
     </div>
     <h1 id="titleText">Random Jeopardy Clues</h1>
@@ -36,9 +40,9 @@
             </ul>
     </div>
     <div id="buttons">
-        <button type="submit" id="getClue">Get Clue</button>
-        <button type="submit" id="getAnswer">Get Answer</button>
-        <button type="reset" id="reset">Reset</button>
+        <button type="submit" id="getClue" class="buttons">Get Clue</button>
+        <button type="submit" id="getAnswer" class="buttons">Get Answer</button>
+        <button type="reset" id="reset" class="buttons">Reset</button>
     </div>
     <div id="clueArea">
         <div>

@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: 'PT Serif', serif;
 }
 body {
     background-color: rgba(8, 20, 132);
     color: whitesmoke;
-    
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, auto);
@@ -28,6 +29,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 20px;
     background-color: red;
 }
 #titleText {
@@ -41,7 +43,9 @@ h4 {
     height: auto;
 }
 #description {
-    grid-area: 4/3/4/5;
+    grid-area: 4/2/4/6;
+    text-align: center;
+    font-size: 18px;
     background-color: rebeccapurple;
 }
 #instructions {
@@ -51,8 +55,14 @@ h4 {
 }
 #buttons {
     grid-area: 6/3/6/5;
+    
     background-color: slategray;
 }
+
+/* .buttons {
+    display: flex;
+    justify-content: space-between;
+} */
 #getClue, #getAnswer, #reset {
     padding: 15px 32px;
 }
@@ -65,7 +75,7 @@ h4 {
     background-color: violet;
     height: 150px;
 }
-#titleText, #jLogo, #description, #buttons {
+#titleText, #jLogo, #buttons {
     display: flex;
     align-items: center;
     justify-content: center;
