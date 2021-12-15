@@ -1,11 +1,66 @@
+* {
+    box-sizing: border-box;
+}
 body {
-  background-color: rgba(8, 20, 132);
-  color: whitesmoke;
+    background-color: rgba(8, 20, 132);
+    color: whitesmoke;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, auto);
+    /* grid-template-areas: 
+        "topNav"
+        "hdr"
+        "logo"
+        "desc"
+        "instructions"
+        "buttons"
+        "clue"
+        "btmNav" */
+}
+#topNav {
+    grid-area: 1/1/1/7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+}
+#titleText {
+    grid-area: 2/3/2/5;
+    background-color: green;
+    
 }
 #jLogo {
+    grid-area: 3/2/3/6;
     width: 100%;
     height: auto;
 }
+#description {
+    grid-area: 4/3/4/5;
+    background-color: rebeccapurple;
+}
+#instructions {
+    grid-area: 5/3/5/5;
+    background-color: salmon;
+}
+#buttons {
+    grid-area: 6/3/6/5;
+    background-color: slategray;
+}
+#clueArea {
+    grid-area: 7/3/7/5;
+    background-color: red;
+}
+#btmnav {
+    grid-area: 8/1/8/7;
+    background-color: violet;
+    height: 150px;
+}
+#titleText, #jLogo, #description, #buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
 /* #titleText {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;

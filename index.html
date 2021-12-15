@@ -13,34 +13,46 @@
 </head>
 
 <body>
+    <div id="topNav">
+        <nav>
+            <a href="" target="_blank">History</a>
+            <a href="" target="_blank">Records</a>
+            <a href="" target="_blank">Alex Trebek</a>
+        </nav>
+    </div>
     <h1 id="titleText">Random Jeopardy Clues</h1>
     <img id="jLogo" src="./images/jeopardylogo.jpeg" alt="Jeopardy Logo">
-    <p>This is an app that displays a randomly selected Jeopardy
+    <p id="description">This website displays a randomly selected Jeopardy
         clue from the jService API that contains over 156,000 clues
         that have been used on the show throughout the years.</p>
-    <h4>Instructions:</h4>
-        <ul>
-            <li>To begin, click on the 'Get Clue' button</li>
-            <li>A random Jeopardy clue with clue category will be displayed</li>
-            <li>Click the 'Get Answer' button to reveal the answer to the clue</li>
-            <li>Click the 'Reset' button to clear the fields on the page before
+    <div id="instructions">
+        <h4>Instructions:</h4>
+            <ul>
+                <li>To begin, click on the 'Get Clue' button</li>
+                <li>A random Jeopardy clue with clue category will be displayed</li>
+                <li>Click the 'Get Answer' button to reveal the answer to the clue</li>
+                <li>Click the 'Reset' button to clear the fields on the page before
                 getting another clue</li>
-        </ul>
-    <div>
+            </ul>
+    </div>
+    <div id="buttons">
         <button type="submit" id="getClue">Get Clue</button>
         <button type="submit" id="getAnswer">Get Answer</button>
         <button type="reset" id="reset">Reset</button>
     </div>
-    <div>
-        <h2 id="category">Category:</h2>
+    <div id="clueArea">
+        <div>
+            <h2 id="category">Category:</h2>
+        </div>
+        <div>
+            <h3 id="clue">Clue:</h3>
+        </div>
+        <div>
+            <h3 id="answer">Answer:</h3>
+        </div>
     </div>
-    <div>
-        <h3 id="clue">Clue:</h3>
-    </div>
-    <div>
-        <h3 id="answer">Answer:</h3>
-    </div>
-    <br><br>
+    <div id="btmnav"></div>
+
 </body>
 
 </html>
