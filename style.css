@@ -47,7 +47,6 @@ h4 {
     grid-area: 4/2/4/6;
     text-align: center;
     font-size: 18px;
-    background-color: rebeccapurple;
 }
 #instructions {
     grid-area: 5/3/5/5;
@@ -57,19 +56,18 @@ h4 {
 #buttons {
     grid-area: 6/3/6/5;
     padding: 10px;
-    background-color: slategray;
-}
-
-/* .buttons {
     display: flex;
-    justify-content: space-between;
-} */
+    flex-direction: columns;
+    justify-content: space-around;
+}
 #getClue, #getAnswer, #reset {
-    padding: 15px 32px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
 }
 #clueArea {
     grid-area: 7/3/7/5;
-    background-color: red;
 }
 .clueArea {
     font-family: Arial, Helvetica, sans-serif;
@@ -79,10 +77,9 @@ h4 {
 }
 #btmnav {
     grid-area: 8/1/8/7;
-    background-color: violet;
     height: 150px;
 }
-#titleText, #jLogo, #buttons {
+#titleText, #jLogo {
     display: flex;
     align-items: center;
     justify-content: center;
