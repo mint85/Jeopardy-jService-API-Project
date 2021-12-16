@@ -14,15 +14,18 @@ body {
 h4 {
     text-align: center;
     font-size: 25px;
-
 }
 #topNav {
     grid-area: 1/1/1/7;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 8px;
     font-size: 20px;
     background-color: whitesmoke;
+}
+a {
+    text-decoration: none;
 }
 #titleText {
     grid-area: 2/1/2/7;  
@@ -38,6 +41,7 @@ h4 {
     grid-area: 4/2/4/6;
     text-align: center;
     font-size: 18px;
+    padding: 10px;
 }
 #instructions {
     grid-area: 5/3/5/5;
@@ -52,7 +56,7 @@ h4 {
     grid-area: 6/3/6/5;
     padding: 17px;
     display: flex;
-    flex-direction: columns;
+    flex-direction: row;
     justify-content: space-around;
 }
 #getClue, #getAnswer, #reset {
