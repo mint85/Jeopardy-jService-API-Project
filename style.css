@@ -25,12 +25,14 @@ h4 {
     background-color: whitesmoke;
 }
 #titleText {
-    grid-area: 2/3/2/5;    
+    grid-area: 2/1/2/7;  
+    font-size: 40px;  
 }
 #jLogo {
     grid-area: 3/2/3/6;
     width: 100%;
     height: auto;
+    border: 12px solid whitesmoke;
 }
 #description {
     grid-area: 4/2/4/6;
@@ -48,13 +50,13 @@ h4 {
 }
 #buttons {
     grid-area: 6/3/6/5;
-    padding: 10px;
+    padding: 17px;
     display: flex;
     flex-direction: columns;
     justify-content: space-around;
 }
 #getClue, #getAnswer, #reset {
-    padding: 15px 25px;
+    padding: 13px 23px;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 600;
