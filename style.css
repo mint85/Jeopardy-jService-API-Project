@@ -10,15 +10,6 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, auto);
-    /* grid-template-areas: 
-        "topNav"
-        "hdr"
-        "logo"
-        "desc"
-        "instructions"
-        "buttons"
-        "clue"
-        "btmNav" */
 }
 h4 {
     text-align: center;
@@ -31,12 +22,10 @@ h4 {
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
-    background-color: red;
+    background-color: whitesmoke;
 }
 #titleText {
-    grid-area: 2/3/2/5;
-    background-color: green;
-    
+    grid-area: 2/3/2/5;    
 }
 #jLogo {
     grid-area: 3/2/3/6;
@@ -52,6 +41,10 @@ h4 {
     grid-area: 5/3/5/5;
     border: 10px solid whitesmoke;
     border-radius: 30px;
+    padding: 10px;
+}
+#instructionsHeading {
+    margin: 10px 0 0 0;
 }
 #buttons {
     grid-area: 6/3/6/5;
