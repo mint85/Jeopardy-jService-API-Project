@@ -130,18 +130,46 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
-/* #titleText {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
-  
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
+
+@media (min-width: 900px) {
+    body {
+        grid-auto-rows: minmax(25px, auto);
     }
-    100% {
-        opacity: 1;
-     }
-} */
+    a {
+        padding: 1vw;
+    }
+    #titleText {
+        font-size: 4vw;
+    }
+    #topNav {
+        font-size: 1.4vw;
+    }
+    #jLogo {
+        width: 60%;
+    }
+    #description {
+        width: 60%;
+        font-size: 2vw
+    }
+    #instructionsHeading {
+        font-size: 3.5vw;
+    }
+    .instructionsList {
+        font-size: 1.5vw;
+    }
+    #buttons {
+        padding: 1.5vw;
+    }
+    #getClue, #getAnswer, #reset {
+    padding: 1.5vw 2.5vw;
+    font-size: 1.7vw;
+    }
+    .clueArea {
+        width: 85%;
+        font-size: 1.5vw;
+    }
+    #trebek {
+        width: 20%;
+    }
+}
