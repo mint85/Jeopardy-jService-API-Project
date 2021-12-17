@@ -23,7 +23,6 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     color:rgba(8, 20, 132);
     padding: 2vw;
-    border-radius: 15px;
 }
 a:hover {
     background-color: rebeccapurple;
