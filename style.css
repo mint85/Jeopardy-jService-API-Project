@@ -78,6 +78,18 @@ a {
     font-size: 2.5vw;
     font-weight: 600;
 }
+.btnGetClue:hover {
+    background-color:forestgreen;
+    color: whitesmoke;
+}
+.btnGetAnswer:hover {
+    background-color: forestgreen;
+    color: whitesmoke;
+}
+.btnReset:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
 .clueArea {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
