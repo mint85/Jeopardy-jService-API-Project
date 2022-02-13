@@ -18,7 +18,7 @@ This is an app that displays a randomly selected Jeopardy clue from the jService
 
 ## Getting Started:
 
-[Click here to view the website!](https://mint85.github.io/Jeopardy-jService-API-Project/)
+[Click here to view the deployed website](https://mint85.github.io/Jeopardy-jService-API-Project/)
 
 <ul>
 <li>To begin, click on the 'Get Clue' button.</li>
