@@ -46,3 +46,4 @@ This is a website that displays a randomly selected Jeopardy clue and answer fro
 <li>Implement a way for the site compare the user answer with the actual answer and display whether they were correct or incorrect.</li>
 <li>Implement a way to keep score of the user's count of correct/incorrect answers.</li>
 <li>Add favicon.</li>
+<li>Add area to display dollar amounts of clues.</li>
