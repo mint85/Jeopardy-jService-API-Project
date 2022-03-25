@@ -93,7 +93,7 @@ body {
 }
 
 #instructionsList {
-    font-size: 3vw;
+    font-size: 2.7vw;
 }
 
 /* BUTTONS AREA  */
@@ -143,7 +143,7 @@ body {
     padding: 15px 20px 0 40px;
     border: 10px solid whitesmoke;
     border-radius: 30px;
-    font-size: 3vw;
+    font-size: 2.7vw;
 }
 
 #trebek {
