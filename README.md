@@ -45,3 +45,4 @@ This is a website that displays a randomly selected Jeopardy clue and answer fro
 <li>Create a text input box that lets the user guess the answer to the clue.</li>
 <li>Implement a way for the site compare the user answer with the actual answer and display whether they were correct or incorrect.</li>
 <li>Implement a way to keep score of the user's count of correct/incorrect answers.</li>
+<li>Add favicon.</li>
