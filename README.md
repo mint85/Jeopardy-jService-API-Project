@@ -14,11 +14,10 @@ This is a website that displays a randomly selected Jeopardy clue and answer fro
 
 ## Getting Started:
 
-<hr>
+<br>
 
 [Click here to view the deployed website](https://mint85.github.io/Jeopardy-jService-API-Project/)
 
-<hr>
 <br>
 <ul>
 <li>First, click on the 'Get Clue' button.</li>
