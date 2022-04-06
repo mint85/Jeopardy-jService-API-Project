@@ -115,7 +115,7 @@ body {
 }
 
 .btnGetClue:hover {
-    background-color:forestgreen;
+    background-color: dodgerblue;
     color: whitesmoke;
     transition-duration: 450ms;
 }
@@ -126,11 +126,11 @@ body {
     transition-duration: 450ms;
 }
 
-.btnReset:hover {
+/* .btnReset:hover {
     background-color: orangered;
     color: whitesmoke;
     transition-duration: 450ms;
-}
+} */
 
 /* CLUE AREA  */
 
