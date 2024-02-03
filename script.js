@@ -1,5 +1,5 @@
 // VARIABLES
-const URL = "https://jepp.app/api/clue?random";
+const DATAURL = "https://jepp.app/api/clue?random";
 const ajaxResult = [];
 
 
@@ -34,7 +34,9 @@ function resetFields() {
 function getJeopardyData(evt) {
     evt.preventDefault();
     resetFields();
-    $.ajax(URL).then(function (data) {
+    $.ajax({
+        url: "https://jepp.app/api/clue?random",
+        dataType: "jsonp"}).then(function (data) {
             // put all received data in ajaxResult array for later use
             ajaxResult.push(data);
             displayNewClue(data);
