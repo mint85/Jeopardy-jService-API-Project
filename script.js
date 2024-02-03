@@ -1,5 +1,5 @@
 // VARIABLES
-const URL = "https://jservice.io/api/random";
+const URL = "https://jepp.app/api/clue?random";
 const ajaxResult = [];
 
 
