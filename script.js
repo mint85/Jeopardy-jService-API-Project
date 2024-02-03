@@ -36,21 +36,38 @@ function getJeopardyData(evt) {
     resetFields();
     $.ajax({
         url: "https://jepp.app/api/clue?random",
-        dataType: "jsonp"}).then(function (data) {
-            // put all received data in ajaxResult array for later use
+        // type: "GET",
+        // crossDomain: true,
+        // dataType: "json",
+        // headers: {
+        //     'Access-Control-Allow-Origin':'*'
+        // },
+        success: function (data) {
+            console.log(data); // server response
             ajaxResult.push(data);
-            displayNewClue(data);
-            console.log(data);
-            console.log(ajaxResult);
+            //displayNewClue(data);
+            },
+        error: function(error) {
+            console.log("something went wrong");
+            console.log (error);
+        }
+    });
+   // .then(function (data) {
+            // put all received data in ajaxResult array for later use
+          //  ajaxResult.push(data);
+          //  displayNewClue(data);
+          //  console.log(data);
+          //  console.log(ajaxResult);
             // console.log(data[0].category.title);
             // console.log(data[0].question);
             // console.log(data[0].answer);
-        },
-        function (error) {
-            console.log("something went wrong");
-            console.log(error);
-        });
+        //},
+        //function (error) {
+        //    console.log("something went wrong");
+        //    console.log(error);
+        //});
 };
+
 
 // Retrieves the category and clue data and displays it on the page.
 function displayNewClue(clueData) {
