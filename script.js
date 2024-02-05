@@ -21,7 +21,7 @@ $reset.on("click", resetFields);
 
 // Resets the Category, Clue, and Answer fields on the page. Also resets the ajaxResult array to empty.
 function resetFields() {
-    $("#category").html(`<u>Category</u> :`);
+    //$("#category").html(`<u>Category</u> :`);
     $("#clue").html(`<u>Clue</u> :`);
     $("#answer").html(`<u>Answer</u> :`);
     ajaxResult.length = 0; 
