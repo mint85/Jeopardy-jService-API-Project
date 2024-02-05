@@ -1,5 +1,5 @@
 // VARIABLES
-const URL = "https://cors-anywhere.herokuapp.com/https://jepp.app/api/clue?random";
+const URL = "https://amj-cors-anywhere-8f974006ad31.herokuapp.com/https://jepp.app/api/clue?random";
 const ajaxResult = [];
 
 
