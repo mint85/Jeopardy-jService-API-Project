@@ -1,6 +1,6 @@
 # Random Jeopardy Clues
 
-This is a website that displays a randomly selected Jeopardy clue and answer from the jService API. jService is an API that contains a database of over 156,000 clues that have been used on Jeopardy throughout the years. I have been a big fan of Jeopardy and trivia in general ever since watching Ken Jennings' original 74-game win streak in 2004. 
+This is a website that displays a randomly selected Jeopardy clue and answer from the Jepp API. Jepp is an API that contains a database of over 175,000 clues that have been used on Jeopardy throughout the years. I have been a big fan of Jeopardy and trivia in general ever since watching Ken Jennings' original 74-game win streak in 2004. 
 <br><br>
 
 ## Technologies Used:
@@ -21,7 +21,7 @@ This is a website that displays a randomly selected Jeopardy clue and answer fro
 <br>
 <ul>
 <li>To begin, click on the 'Get Clue' button.</li>
-<li>A random Jeopardy clue will be retrieved from the jService API. The clue with clue category will be displayed.</li>
+<li>A random Jeopardy clue will be retrieved from the Jepp API. The clue will be displayed on the page.</li>
 <li>Once you have made your best guess, click the 'Get Answer' button to reveal the answer to the clue.</li>
 <li>Click the 'Get Clue' button to clear the fields on the page and display another clue!</li>
 </ul>
@@ -43,7 +43,6 @@ This is a website that displays a randomly selected Jeopardy clue and answer fro
 <li>Create a text input box that lets the user guess the answer to the clue.</li>
 <li>Implement a way for the site compare the user answer with the actual answer and display whether they were correct or incorrect.</li>
 <li>Implement a way to keep score of the user's count of correct/incorrect answers.</li>
-<li>Add favicon.</li>
 <li>Add area to display dollar amounts of clues.</li>
 </ul>
 
