@@ -1,5 +1,5 @@
 // VARIABLES
-const DATAURL = "https://jepp.app/api/clue?random";
+const URL = "https://cors-anywhere.herokuapp.com/https://jepp.app/api/clue?random";
 const ajaxResult = [];
 
 
@@ -34,45 +34,25 @@ function resetFields() {
 function getJeopardyData(evt) {
     evt.preventDefault();
     resetFields();
-    $.ajax({
-        url: "https://jepp.app/api/clue?random",
-        // type: "GET",
-        // crossDomain: true,
-        // dataType: "json",
-        // headers: {
-        //     'Access-Control-Allow-Origin':'*'
-        // },
-        success: function (data) {
-            console.log(data); // server response
+    $.ajax(URL).then(function (data) {
+            // put all received data in ajaxResult array for later use
             ajaxResult.push(data);
             //displayNewClue(data);
-            },
-        error: function(error) {
-            console.log("something went wrong");
-            console.log (error);
-        }
-    });
-   // .then(function (data) {
-            // put all received data in ajaxResult array for later use
-          //  ajaxResult.push(data);
-          //  displayNewClue(data);
-          //  console.log(data);
-          //  console.log(ajaxResult);
+            console.log(data);
+            console.log(ajaxResult);
             // console.log(data[0].category.title);
             // console.log(data[0].question);
             // console.log(data[0].answer);
-        //},
-        //function (error) {
-        //    console.log("something went wrong");
-        //    console.log(error);
-        //});
-};
-
-
-// Retrieves the category and clue data and displays it on the page.
-function displayNewClue(clueData) {
-    $("#category").html(`<u>Category</u> : ${clueData[0].category.title}`);
-    $("#clue").html(`<u>Clue</u> : ${clueData[0].question}`);
+        },
+        function (error) {
+            console.log("something went wrong");
+            console.log(error);
+        }).then(function displayNewClue() {
+            // Retrieves the clue data from the ajaxResult array and displays it on the page.
+            // No longer displaying Category as jepp.app does not include Category name.
+            // $("#category").html(`<u>Category</u> : ${clueData[0].category.title}`);
+            $("#clue").html(`<u>Clue</u> : ${ajaxResult[(0, 0)][0].question}`);
+        });
 };
 
 // Access the answer from the ajaxResult array and displays it on the page.
